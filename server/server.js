@@ -1,6 +1,5 @@
-// git add .
-// git commit -m "V 0.3 'Alpha Launch'"
-// git push -u origin main
+
+
 process.env.NODE_ENV = 'production';
 // 3rd party modules
 require('dotenv').config();
