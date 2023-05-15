@@ -12,3 +12,5 @@ and in its current version it's more or less a proof of concept until more featu
 
  In the UI, the lotties and the custom icon were
  both created with online generators.
+ 
+ Any nginx and systemctl configurations have been left out for now.
