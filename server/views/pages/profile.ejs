@@ -1,0 +1,31 @@
+<%- include('../partials/head') %>
+<%- include('../css/NavbarStyles') %>
+<%- include('../css/profileStyles') %>
+
+    <title>FBP</title>
+</head>
+
+
+<body>
+
+<%- include ('../partials/Navbar', { userAuthentication }) %>
+
+<% if (userAuthentication) { %>
+    <!-- Logout button -->
+    <div class="profile-main">
+        <form action="/logout" method="POST">
+            <button type="submit">Logout</button>
+        </form>
+        <h2>Welcome <%= username + "!" %>
+        </h2>
+    </div>
+<% } %>
+
+</body>
+
+</html>
+<div class="container">
+    <footer class="client_footer">
+        <script src="/socket.io/socket.io.js"></script>
+    </footer>   
+</div>

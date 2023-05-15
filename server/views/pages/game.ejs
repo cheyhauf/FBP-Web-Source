@@ -1,0 +1,34 @@
+    <%- include('../partials/head') %>
+    <%- include('../css/chatBoxStyles') %>
+    <%- include('../css/gameStyles') %>
+    
+    <title>FBP</title>
+</head>
+
+<body>
+  <div class="game-main">
+    
+    <div class="game-header">
+      <div class="player-plate">
+        <h2><%= hostName %></h2>
+      </div>
+      <div class="player-versus-plate">
+        <h2>VS</h2>
+      </div>
+      <div class="player-plate">
+        <h2><%= guestName %></h2>
+      </div>
+    </div>
+
+    <canvas height="400" width="400"></canvas>
+
+    
+  </div>
+<%- include ('../partials/chat') %>
+</body>
+
+<footer>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../src/game.js"></script>
+</footer>
+</html>

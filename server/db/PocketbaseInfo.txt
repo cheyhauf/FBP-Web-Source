@@ -1,0 +1,10 @@
+While I wouldnt include the applications database raw data, installing and using pocketbase is easier than sql for sure, if youd' want to use
+grab the exe based on sys architecture.
+
+https://pocketbase.io/docs/
+
+then follow docs, but a quick use would be to nav to /pb and run ./pocketbase serve, then wire anything in node to its address,
+which is just localhost in dev. 
+
+In my app, pocketbase is a systemctl service that I needed to create so that it will run when the server itself restarts. It pretty customizable and
+can be used for much more than just storing data, as I use it as a simple auth system as well.

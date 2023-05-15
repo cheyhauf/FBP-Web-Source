@@ -1,0 +1,18 @@
+
+<div class="profile-card">
+    <div class="avatar-container">
+        <div class="avatar-glow"></div>
+                <div class="avatar-bg" <%/* eslint-disable css-propertyvalueexpected */%>style="background-color:<%= userColor %>; box-shadow: 0 0 10px <%= rgbaUserColor %>;"></div>
+    </div>
+    <h2 class="username"><%= username %></h2>
+    <div class="metrics">
+        <div class="metric">
+            <span class="value"><%= userWins %></span>
+            <span class="label">Wins</span>
+        </div>
+        <div class="metric">
+            <span class="value"><%= userPoints %></span>
+            <span class="label">Points</span>
+        </div>
+    </div>
+</div>

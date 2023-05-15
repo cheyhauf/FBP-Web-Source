@@ -1,0 +1,3 @@
+In production, I map any personal data like the database admin auth, bcrypt seasonings, etc in a .env file using the dotenv node package to process the variables
+into the code, to quick use just make a variable directly above and enviroment variables that represent the user / pass accordingly to whatever the initial admin login
+was for pocketbase after serving and navigating to the logged address.

@@ -1,0 +1,138 @@
+<style>
+
+.navbar {
+    position: fixed;
+    background-color: var(--theme-light-primary);
+    transition: width 200ms ease;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item {
+  width: 100%;
+}
+
+.nav-item:last-child {
+  margin-top: auto;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: var(--theme-light-text-primary);
+  text-decoration: none;
+}
+
+.link-text {
+  display: none;
+  margin-left: 1rem;
+}
+
+.nav-link svg {
+  min-width: 2rem;
+  max-width: 2rem;
+  margin: 0 1.5rem;
+  transition: 400ms;
+  fill: var(--theme-light-icon-primary);
+}
+
+.nav-item:hover svg {
+  filter: brightness(1.5);
+}
+
+.nav-link:hover {
+  background-color: var(--theme-light-secondary);
+  color: var(--theme-light-text-secondary);
+  transition: 400ms;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  background-color: var(--theme-light-secondary);
+  color: var(--theme-light-text-secondary);
+  font-size: 1.5rem;
+  letter-spacing: 0.3ch;
+  width: 100%;
+  padding-left: 1rem;
+}
+
+.logo svg {
+  margin-left: 0.5rem;
+  min-width: 4rem;
+  max-width: 4rem;
+  transform: rotate(0deg);
+  transition: 400ms;
+}
+
+.navbar:hover .logo svg {
+  transform: rotate(180deg);
+}
+
+.logo svg:hover {
+  animation: hue-rotate 4s linear infinite;
+}
+
+@keyframes hue-rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+    padding: 0;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+  
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+
+  .navbar:hover {
+    width: 16rem;
+  }
+
+  .navbar:hover .link-text {
+    display: inline;
+    transition: opacity 400ms;
+  }
+  
+}
+
+</style>

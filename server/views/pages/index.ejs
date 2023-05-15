@@ -1,0 +1,23 @@
+    <%- include('../partials/head') %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
+    <%- include('../css/NavbarStyles') %>
+    <%- include('../css/chatBoxStyles') %>
+    <%- include('../css/profileCardStyles') %>
+    <%- include('../css/gameListStyles') %>
+    
+    <title>FBP</title>
+</head>
+
+
+<body>
+    <%- include ('../partials/Navbar', { userAuthentication }) %>
+    <% if (userAuthentication) { %>
+        <%- include ('../partials/profileCard', { username, userColor, userPoints, userWins, rgbaUserColor }) %>
+    <% } %>
+    <%- include ('../partials/gameList') %>
+    <%- include ('../partials/chat') %>
+</body>
+
+
+<%- include ('../partials/footer')%>
+
